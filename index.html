@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ponnala&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="" />
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Graphic Designer, Web Developer etc." />
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="nav-icons">
+        <i class="fa-solid fa-comments"></i>
+        <i class="fa-regular fa-bell"></i>
+        <button class="search-btn">
+          <i class="fa-solid fa-share"></i>Share
+        </button>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="banner">
+        <img src="./assets/background.png" alt="" class="banner-img" />
+        <div class="banner-content">
+          <img src="./assets/codefixxer.png" alt="" />
+          <h1 class="codefixxer">CodeFixxer</h1>
+        </div>
+      </div>
+    </section>
+    <div class="page">
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="profile-img">
+            <img src="./assets/logo.png" alt="" />
+          </div>
+          <div class="profile-content">
+            <div class="heading">
+              <h1>Hassam Mehmood</h1>
+              <div class="side-box">
+                <p>Open to work</p>
+              </div>
+            </div>
+
+            <div class="bio-container">
+              <span class="bio-text" id="bioText"
+                >Full-Stack Laravel & React Developer | AI & Chatbot Integration
+                Expert | SaaS, API & Payment Gateway Specialist | Founder @ Code
+                Fixxer | Web & Mobile (Flutter/React Native) App
+                Specialist...</span
+              ><button class="see-more-btn" id="bioToggleBtn">
+                See more <span class="arrow">▼</span>
+              </button>
+            </div>
+
+            <ul class="key-skill" id="skillList"></ul>
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Sargodha, Pakistan</span>
+            </div>
+            <div class="action-buttons">
+              <button class="btn btn-primary">Let’s Chat!</button>
+              <button class="btn btn-secondary">Follow</button>
+              <button class="btn btn-icon">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+            <div class="special">
+              <div class="special-icons">
+                <a href="https://facebook.com" target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://twitter.com" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+
+                <a href="https://linkedin.com" target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="https://instagram.com" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+              <div class="btn-wrapper">
+                <a href="/assets/CV.pdf" download="Ayesha_CV.pdf"
+                  >Download CV</a
+                >
+                <i class="fa-solid fa-right-to-bracket fa-rotate-90"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-skills">
+          <h1>Top Skills</h1>
+          <ul class="content" id="content"></ul>
+        </div>
+        <div class="soft-skills">
+          <h1>Soft Skills</h1>
+          <ul class="softskills" id="softskills"></ul>
+          <div class="see-all">
+            <button class="see-btn" id="skillsToggleBtn">See all</button>
+            <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
+          </div>
+        </div>
+        <div class="language">
+          <h1>Language</h1>
+          <ul class="languagelist" id="languageList"></ul>
+          <div class="see-all">
+            <button class="see-btn" id="skillsToggleBtn">See all</button>
+            <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
+          </div>
+        </div>
+     
+          <div class="box-border">
+                <div class="education-box">
+  <div class="education-header">
+    <h2>Education</h2>
+   <div class="education-container">
+   
+     <ul id="educationList" class="timeline"></ul>
+      <div class="see-all">
+      <button id="toggleBtn" class="see-all-btn">See all Education ▼</button>
+    </div>
+   </div>
+    
+  </div>
+
+ 
+</div>    
+          </div>
+  
+
+      </aside>
+      <main></main>
+      <aside></aside>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
