@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- Icons & Fonts -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,26 +20,34 @@
     />
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- Your styles -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="logo">
         <img src="./assets/logo.png" alt="" />
       </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Graphic Designer, Web Developer etc." />
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="nav-icons">
-        <i class="fa-solid fa-comments"></i>
-        <i class="fa-regular fa-bell"></i>
-        <button class="search-btn">
-          <i class="fa-solid fa-share"></i>Share
-        </button>
+      <div class="right-part">
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Graphic Designer, Web Developer etc."
+          />
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="nav-icons">
+          <i class="fa-solid fa-comments"></i>
+          <i class="fa-regular fa-bell"></i>
+          <button class="search-btn">
+            <i class="fa-solid fa-share"></i>Share
+          </button>
+        </div>
       </div>
     </header>
+
     <section class="hero">
       <div class="banner">
         <img src="./assets/background.png" alt="" class="banner-img" />
@@ -47,12 +57,14 @@
         </div>
       </div>
     </section>
+
     <div class="page">
       <aside class="sidebar">
         <div class="profile">
           <div class="profile-img">
             <img src="./assets/logo.png" alt="" />
           </div>
+
           <div class="profile-content">
             <div class="heading">
               <h1>Hassam Mehmood</h1>
@@ -62,21 +74,23 @@
             </div>
 
             <div class="bio-container">
-              <span class="bio-text" id="bioText"
-                >Full-Stack Laravel & React Developer | AI & Chatbot Integration
+              <span class="bio-text" id="bioText">
+                Full-Stack Laravel & React Developer | AI & Chatbot Integration
                 Expert | SaaS, API & Payment Gateway Specialist | Founder @ Code
-                Fixxer | Web & Mobile (Flutter/React Native) App
-                Specialist...</span
-              ><button class="see-more-btn" id="bioToggleBtn">
+                Fixxer | Web & Mobile (Flutter/React Native) App Specialist...
+              </span>
+              <button class="see-more-btn" id="bioToggleBtn">
                 See more <span class="arrow">▼</span>
               </button>
             </div>
 
             <ul class="key-skill" id="skillList"></ul>
+
             <div class="location">
               <i class="fa-solid fa-location-dot"></i>
               <span>Sargodha, Pakistan</span>
             </div>
+
             <div class="action-buttons">
               <button class="btn btn-primary">Let’s Chat!</button>
               <button class="btn btn-secondary">Follow</button>
@@ -84,6 +98,7 @@
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </button>
             </div>
+
             <div class="special">
               <div class="special-icons">
                 <a href="https://facebook.com" target="_blank"
@@ -92,7 +107,6 @@
                 <a href="https://twitter.com" target="_blank"
                   ><i class="fa-brands fa-twitter"></i
                 ></a>
-
                 <a href="https://linkedin.com" target="_blank"
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
@@ -100,6 +114,7 @@
                   ><i class="fa-brands fa-instagram"></i
                 ></a>
               </div>
+
               <div class="btn-wrapper">
                 <a href="/assets/CV.pdf" download="Ayesha_CV.pdf"
                   >Download CV</a
@@ -109,10 +124,12 @@
             </div>
           </div>
         </div>
+
         <div class="top-skills">
           <h1>Top Skills</h1>
           <ul class="content" id="content"></ul>
         </div>
+
         <div class="soft-skills">
           <h1>Soft Skills</h1>
           <ul class="softskills" id="softskills"></ul>
@@ -121,6 +138,7 @@
             <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
           </div>
         </div>
+
         <div class="language">
           <h1>Language</h1>
           <ul class="languagelist" id="languageList"></ul>
@@ -129,30 +147,136 @@
             <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
           </div>
         </div>
-     
-          <div class="box-border">
-                <div class="education-box">
-  <div class="education-header">
-    <h2>Education</h2>
-   <div class="education-container">
-   
-     <ul id="educationList" class="timeline"></ul>
-      <div class="see-all">
-      <button id="toggleBtn" class="see-all-btn">See all Education ▼</button>
-    </div>
-   </div>
-    
-  </div>
 
- 
-</div>    
+        <div class="box-border">
+          <div class="education-box">
+            <div class="education-header">
+              <h2>Education</h2>
+              <div class="education-container">
+                <ul id="educationList" class="timeline"></ul>
+              </div>
+              <div class="see-all-education">
+                <button id="toggleBtn" class="see-all-btn">
+                  See all Education ▼
+                </button>
+              </div>
+            </div>
           </div>
-  
-
+        </div>
       </aside>
-      <main></main>
+
+      <main class="mid-part">
+        <div class="portfolio">
+           <div class="portfolio-header">
+        <div class="container">
+            <h1 class="portfolio-title">Portfolios</h1>
+            <div class="project-count" id="projectCount"> Projects</div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="laravel">Laravel</button>
+                <button class="filter-btn" data-filter="react">React Js</button>
+                <button class="filter-btn" data-filter="node">Node Js</button>
+                <button class="filter-btn" data-filter="ai">Ai</button>
+                <button class="filter-btn" data-filter="mern">Mern Stack</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-grid">
+        <div class="container">
+            <div class="row" id="portfolioGrid">
+              
+            </div>
+        </div>
+
+    </div>
+     <div class="see-all-card">
+                <button id="togglecard" class="see-all-cards">
+                  See all Projects ▼
+                </button>
+              </div> 
+        </div>
+<div class="skills-container">
+        <div class="skills-header">
+            <h2 class="skills-title">Skills</h2>
+            <a href="#" class="see-all" id="seeAllBtn">See all</a>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="skill-name">Web Develop</div>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                        <circle class="progress-bar" cx="50" cy="50" r="45" data-percentage="55"></circle>
+                    </svg>
+                    <div class="progress-text">55%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">Lorem ipsum</div>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                        <circle class="progress-bar" cx="50" cy="50" r="45" data-percentage="40"></circle>
+                    </svg>
+                    <div class="progress-text">40%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">Lorem ipsum</div>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                        <circle class="progress-bar" cx="50" cy="50" r="45" data-percentage="90"></circle>
+                    </svg>
+                    <div class="progress-text">90%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">Lorem ipsum</div>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                        <circle class="progress-bar" cx="50" cy="50" r="45" data-percentage="90"></circle>
+                    </svg>
+                    <div class="progress-text">90%</div>
+                </div>
+            </div>
+        </div>
+
+       <div class="skills-details" id="skillsDetails"></div>
+
+    </div>
+  <div class="box-border">
+          <div class="experience-box">
+            <div class="experience-header">
+              <h2>Experience</h2>
+              <div class="experience-container">
+                <ul id="experienceList" class="experienceTimeline"></ul>
+              </div>
+              <div class="see-all-experience">
+                <button id="toggleBtnExp" class="see-all-btn-exp">
+                  See all experience ▼
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+<div class="reviews-section">
+  <h2 class="reviews-title">Client Reviews</h2>
+  <ul class="reviews-list" id="reviewsList"></ul>
+  <button class="toggle-btn" id="toggleBtnReviews">View all Reviews ▼</button>
+</div>
+
+      </main>
       <aside></aside>
     </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
